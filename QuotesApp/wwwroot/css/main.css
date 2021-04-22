@@ -1,0 +1,12 @@
+﻿.navbar {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar li {
+    margin-right: 0.5em
+}
+
+.delete {
+    width: 2em;
+}
