@@ -27,6 +27,11 @@ namespace QuotesApp
         {
             services.AddControllersWithViews();
             services.AddDbContext<QuoteContext>(options => options.UseSqlServer(Configuration.GetConnectionString("QuoteContext")));
+            services.Bui
+            using (var context = new QuoteContext())
+            {
+
+            }
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
