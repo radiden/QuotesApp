@@ -24,7 +24,7 @@ namespace QuotesApp
 
                 var conf = serviceProvider.GetRequiredService<IConfiguration>();
 
-                if (conf.GetValue<bool>("DoMigration") == true)
+                if (conf.GetValue<bool>("DoMigration"))
                 {
                     using (var context = new QuoteContext(serviceProvider.GetRequiredService<DbContextOptions<QuoteContext>>()))
                     {
